@@ -1,44 +1,75 @@
 body{
-font-family: Arial;
+font-family: 'Segoe UI', sans-serif;
 margin:0;
-background:#f4f4f4;
+background:#0f172a;
+color:white;
 }
 
 header{
-background:#1a1a1a;
-color:white;
 text-align:center;
-padding:30px;
+padding:50px;
+background:linear-gradient(90deg,#1e3a8a,#2563eb);
 }
 
 nav a{
-color:white;
-margin:10px;
+margin:15px;
 text-decoration:none;
+color:white;
 font-weight:bold;
 }
 
 section{
+max-width:900px;
+margin:auto;
 padding:40px;
-background:white;
-margin:20px;
-border-radius:8px;
 }
 
-.project{
-background:#f0f0f0;
+h2{
+border-bottom:2px solid #2563eb;
+padding-bottom:10px;
+}
+
+.bar{
+background:#1f2937;
+border-radius:20px;
+height:12px;
+margin-bottom:20px;
+}
+
+.fill{
+background:#3b82f6;
+height:12px;
+border-radius:20px;
+}
+
+.card{
+background:#1f2937;
 padding:20px;
-margin:15px 0;
-border-radius:5px;
+margin-top:20px;
+border-radius:10px;
+transition:0.3s;
 }
 
-ul{
-list-style:square;
+.card:hover{
+transform:scale(1.05);
+}
+
+button{
+background:#2563eb;
+color:white;
+padding:12px 20px;
+border:none;
+border-radius:6px;
+font-size:16px;
+cursor:pointer;
+}
+
+button:hover{
+background:#1d4ed8;
 }
 
 footer{
 text-align:center;
 padding:20px;
-background:#1a1a1a;
-color:white;
+background:#020617;
 }
