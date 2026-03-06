@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Manojkumar Dannana | Portfolio</title>
-    <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css?v=3.0">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&family=Playfair+Display:wght@600&display=swap" rel="stylesheet">
 </head>
 
 <body>
@@ -44,14 +44,12 @@
                 <p class="inst">Indian Institute of Information Technology Design & Manufacturing (IIITDM), Kurnool</p>
                 <div class="score-badge">CGPA: 7.51</div>
             </div>
-            
             <div class="edu-card reveal-3d delay-2">
                 <div class="edu-year">Intermediate</div>
                 <h3>Board of Intermediate Education</h3>
                 <p class="inst">Tirumala Junior College</p>
                 <div class="score-badge">CGPA: 9.91</div>
             </div>
-
             <div class="edu-card reveal-3d delay-3">
                 <div class="edu-year">Secondary</div>
                 <h3>Board of Secondary Education</h3>
@@ -62,7 +60,7 @@
     </section>
 
     <section id="skills" class="skills">
-        <h2 class="section-title reveal-text">Technical <span style="color: #fcd34d;">Arsenal</span></h2>
+        <h2 class="section-title reveal-text">Technical <span style="color: #fbbf24;">Arsenal</span></h2>
         
         <div class="marquee-wrapper slide-up delay-1">
             <div class="marquee-content">
@@ -73,6 +71,7 @@
                 <div class="skill-item"><div class="skill-circle">CV</div><span>Cadence</span></div>
                 <div class="skill-item"><div class="skill-circle">AH</div><span>ANSYS HFSS</span></div>
                 <div class="skill-item"><div class="skill-circle">LT</div><span>LTspice</span></div>
+                
                 <div class="skill-item"><div class="skill-circle">PY</div><span>Python</span></div>
                 <div class="skill-item"><div class="skill-circle">C++</div><span>C / C++</span></div>
                 <div class="skill-item"><div class="skill-circle">VR</div><span>Verilog</span></div>
@@ -83,7 +82,7 @@
             </div>
         </div>
 
-        <h3 class="sub-title reveal-text" style="margin-top: 80px; color: white;">Licenses & Certifications</h3>
+        <h3 class="sub-title reveal-text" style="margin-top: 80px; color: white; text-align: center;">Licenses & Certifications</h3>
         <div class="cert-container">
             <div class="cert-card slide-up delay-1">
                 <div class="cert-icon">🚁</div>
@@ -109,7 +108,7 @@
             <div class="cert-card slide-up delay-4">
                 <div class="cert-icon">💻</div>
                 <div class="cert-info">
-                    <h4>Hardware Modeling (Verilog)</h4>
+                    <h4>Hardware Modeling</h4>
                     <p>NPTEL</p>
                 </div>
             </div>
@@ -117,32 +116,39 @@
     </section>
 
     <section id="projects" class="projects">
-        <h2 class="section-title reveal-text">Our <span style="color: #f472b6;">Projects</span></h2>
-        <p style="text-align: center; color: var(--text-muted); margin-top: -40px; margin-bottom: 50px;" class="reveal-text">Explore my portfolio of technical engineering builds.</p>
+        <h2 class="section-title reveal-text">Our <span class="gradient-text">Projects</span></h2>
+        <p class="proj-subtitle reveal-text">Explore my portfolio of technical engineering builds</p>
         
+        <div class="proj-filters slide-up delay-1">
+            <button class="filter-btn active">All Projects</button>
+            <button class="filter-btn">Hardware</button>
+            <button class="filter-btn">Software</button>
+            <button class="filter-btn">VLSI</button>
+        </div>
+
         <div class="project-grid">
-            <div class="proj-card slide-up delay-1">
-                <div class="proj-image bg-grad-1">
-                    <span class="status-tag">COMPLETED</span>
+            <div class="proj-card slide-up delay-2">
+                <div class="proj-image bg-pattern-1">
+                    <span class="status-badge">COMPLETED</span>
                 </div>
-                <div class="proj-content">
+                <div class="proj-body">
                     <div class="proj-tags">
-                        <span class="tag blue">VLSI</span>
+                        <span class="tag solid">VLSI</span>
                         <span class="tag outline">CADENCE</span>
                     </div>
                     <h3>VLSI VCO Design</h3>
                     <p>Designed a Voltage Controlled Oscillator (VCO) of 180nm Full custom (RTL to GDS) utilizing Cadence Virtuoso.</p>
-                    <div class="proj-footer"><span class="dot"></span> 180nm Tech</div>
+                    <div class="proj-footer"><span class="dot"></span> 180NM TECH</div>
                 </div>
             </div>
 
-            <div class="proj-card slide-up delay-2">
-                <div class="proj-image bg-grad-2">
-                    <span class="status-tag">COMPLETED</span>
+            <div class="proj-card slide-up delay-3">
+                <div class="proj-image bg-pattern-2">
+                    <span class="status-badge">COMPLETED</span>
                 </div>
-                <div class="proj-content">
+                <div class="proj-body">
                     <div class="proj-tags">
-                        <span class="tag blue">ROBOTICS</span>
+                        <span class="tag solid">ROBOTICS</span>
                         <span class="tag outline">HARDWARE</span>
                     </div>
                     <h3>Autonomous Cleaning Machine</h3>
@@ -151,13 +157,13 @@
                 </div>
             </div>
 
-            <div class="proj-card slide-up delay-3">
-                <div class="proj-image bg-grad-3">
-                    <span class="status-tag">COMPLETED</span>
+            <div class="proj-card slide-up delay-4">
+                <div class="proj-image bg-pattern-3">
+                    <span class="status-badge">COMPLETED</span>
                 </div>
-                <div class="proj-content">
+                <div class="proj-body">
                     <div class="proj-tags">
-                        <span class="tag blue">IOT</span>
+                        <span class="tag solid">IOT</span>
                         <span class="tag outline">EMBEDDED</span>
                     </div>
                     <h3>IoT Smart Streetlight</h3>
@@ -209,15 +215,7 @@
                 </div>
             </div>
 
-            <div class="social-links slide-up delay-3">
-                <a href="#" class="social-icon">🐙</a>
-                <a href="#" class="social-icon">💼</a>
-                <a href="mailto:manojdannana8@gmail.com" class="social-icon">✉️</a>
-            </div>
-
-            <hr class="contact-divider slide-up delay-4">
-
-            <div class="phone-card slide-up delay-5">
+            <div class="phone-card slide-up delay-3">
                 <div class="phone-icon">📞</div>
                 <h3>Contact Me Via Phone</h3>
                 <p>Prefer to talk directly? Give me a call for immediate assistance or quick discussions.</p>
