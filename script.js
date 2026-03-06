@@ -9,9 +9,11 @@ document.addEventListener("DOMContentLoaded", () => {
     window.addEventListener('scroll', () => {
         const nav = document.getElementById('navbar');
         if (window.scrollY > 50) {
+            nav.style.background = 'rgba(8, 11, 19, 0.95)';
             nav.style.boxShadow = '0 4px 20px rgba(0, 0, 0, 0.5)';
             nav.style.padding = '15px 8%';
         } else {
+            nav.style.background = 'rgba(8, 11, 19, 0.8)';
             nav.style.boxShadow = 'none';
             nav.style.padding = '20px 8%';
         }
