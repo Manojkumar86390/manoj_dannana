@@ -296,10 +296,25 @@ message: document.getElementById("hiremessage").value
 alert("Hiring Request Sent!");
 });
 }
+
+    function sendContactMail(e){
+e.preventDefault();
+
+emailjs.send("service_p6pv0g4","template_arr6ybg",{
+name: document.getElementById("name").value,
+email: document.getElementById("email").value,
+message: document.getElementById("message").value,
+company:"",
+phone:""
+}).then(function(){
+alert("Message Sent Successfully!");
+});
+}
 </script>
     
 </body>
 </html>
+
 
 
 
