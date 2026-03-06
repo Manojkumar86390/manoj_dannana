@@ -283,17 +283,7 @@
 emailjs.init("GsVaxD0EcUTed_Xz_");
 })();
 
-function sendContactMail(e){
-e.preventDefault();
 
-emailjs.send("service_p6pv0g4","template_arr6ybg",{
-name: document.getElementById("name").value,
-email: document.getElementById("email").value,
-message: document.getElementById("message").value
-}).then(function(){
-alert("Message Sent Successfully!");
-});
-}
 
 function sendHireMail(e){
 e.preventDefault();
@@ -310,5 +300,6 @@ alert("Hiring Request Sent!");
     
 </body>
 </html>
+
 
 
