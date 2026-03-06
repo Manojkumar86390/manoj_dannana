@@ -37,7 +37,7 @@ nav a:hover { color: var(--primary); }
 .top-left { width: 300px; height: 300px; background: rgba(56, 189, 248, 0.3); top: -100px; left: -100px; }
 .bottom-right { width: 400px; height: 400px; background: rgba(129, 140, 248, 0.2); bottom: -150px; right: -100px; }
 
-/* Global Settings */
+/* Global Section Titles */
 .section-title { text-align: center; font-size: 2.8rem; margin-bottom: 50px; font-weight: 800; }
 
 /* Education Section */
@@ -50,21 +50,12 @@ nav a:hover { color: var(--primary); }
 .inst { color: var(--text-muted); font-size: 1rem; margin-bottom: 5px; }
 .score-badge { display: inline-block; margin-top: 15px; background: linear-gradient(45deg, var(--primary), var(--secondary)); color: white; padding: 5px 15px; border-radius: 8px; font-weight: bold; font-size: 0.85rem; }
 
-/* --- MATCHING SKILLS SECTION --- */
+/* Skills Marquee */
 .skills { padding: 100px 0; background: #050810; overflow: hidden; }
 .marquee-wrapper { width: 100%; padding: 50px 0; background: linear-gradient(90deg, #050810 0%, transparent 15%, transparent 85%, #050810 100%); position: relative; z-index: 2; }
-.marquee-content { display: flex; gap: 80px; width: max-content; 
-    /* This animation moves it Left to Right exactly as requested! */
-    animation: scrollLeftToRight 25s linear infinite; 
-    padding-left: 40px; 
-}
+.marquee-content { display: flex; gap: 80px; width: max-content; animation: scrollLeftToRight 25s linear infinite; padding-left: 40px; }
 .marquee-content:hover { animation-play-state: paused; }
-
-@keyframes scrollLeftToRight {
-    from { transform: translateX(-50%); }
-    to { transform: translateX(0); }
-}
-
+@keyframes scrollLeftToRight { from { transform: translateX(-50%); } to { transform: translateX(0); } }
 .skill-item { display: flex; flex-direction: column; align-items: center; gap: 15px; }
 .skill-circle { width: 85px; height: 85px; border-radius: 50%; background: #0d1322; border: 1px solid rgba(255,255,255,0.1); display: flex; justify-content: center; align-items: center; font-size: 1.2rem; font-weight: 600; color: #94a3b8; transition: 0.3s ease; box-shadow: 0 4px 20px rgba(0,0,0,0.5); }
 .skill-item:hover .skill-circle { border-color: var(--primary); color: white; transform: scale(1.1); box-shadow: 0 0 20px rgba(56, 189, 248, 0.3); }
@@ -78,27 +69,83 @@ nav a:hover { color: var(--primary); }
 .cert-info h4 { color: white; font-size: 1rem; margin-bottom: 5px; }
 .cert-info p { color: var(--text-muted); font-size: 0.85rem; }
 
-/* --- MATCHING PROJECTS SECTION --- */
-.projects { padding: 100px 8%; }
-.gradient-text { background: linear-gradient(90deg, #fbcfe8, #f472b6); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
-.proj-subtitle { text-align: center; color: var(--text-muted); margin-top: -35px; margin-bottom: 40px; font-size: 1.1rem; }
+/* =========================================
+   MATCHING "OUR PROJECTS" SECTION
+   ========================================= */
+.projects { padding: 100px 8%; background: #080b13; }
 
-.proj-filters { display: flex; justify-content: center; flex-wrap: wrap; gap: 15px; margin-bottom: 50px; }
-.filter-btn { background: transparent; border: 1px solid rgba(255,255,255,0.15); color: white; padding: 8px 25px; border-radius: 30px; cursor: pointer; font-size: 0.85rem; transition: 0.3s; }
-.filter-btn:hover { border-color: rgba(255,255,255,0.4); }
-.filter-btn.active { background: linear-gradient(90deg, #fbcfe8, #f472b6); color: #000; font-weight: 700; border: none; }
+/* Serif Font + Larger Size for exact match */
+.serif-title {
+    font-family: 'Playfair Display', serif;
+    font-size: 3.5rem;
+    font-weight: 700;
+}
 
+/* Yellow -> Peach -> Pink Sunset Gradient */
+.projects .gradient-text { 
+    background: linear-gradient(90deg, #fde047, #f97316, #d946ef); 
+    -webkit-background-clip: text; 
+    -webkit-text-fill-color: transparent; 
+    font-family: 'Playfair Display', serif;
+}
+
+.proj-subtitle { 
+    text-align: center; 
+    color: #94a3b8; 
+    margin-top: -30px; 
+    margin-bottom: 50px; 
+    font-size: 1.05rem; 
+}
+
+/* The dark pill buttons from your reference */
+.proj-filters { 
+    display: flex; 
+    justify-content: center; 
+    flex-wrap: wrap; 
+    gap: 15px; 
+    margin-bottom: 60px; 
+}
+
+.filter-btn { 
+    background: #111; /* Very dark background */
+    border: 1px solid rgba(255,255,255,0.1); 
+    color: white; 
+    padding: 10px 28px; 
+    border-radius: 30px; 
+    cursor: pointer; 
+    font-size: 0.95rem;
+    font-weight: 500;
+    transition: 0.3s; 
+}
+
+.filter-btn:hover { 
+    border-color: rgba(255,255,255,0.3); 
+    background: #222;
+}
+
+/* The highlighted gradient pill button */
+.filter-btn.active { 
+    background: linear-gradient(90deg, #fde047, #d946ef); 
+    color: #000; 
+    font-weight: 700; 
+    border: 1px solid transparent; 
+}
+
+/* Project Grid & Cards */
 .project-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 30px; max-width: 1200px; margin: 0 auto; }
 .proj-card { background: #0b0f19; border: 1px solid rgba(255,255,255,0.05); border-radius: 16px; overflow: hidden; display: flex; flex-direction: column; transition: 0.4s ease; }
 .proj-card:hover { transform: translateY(-10px); box-shadow: 0 20px 40px rgba(0,0,0,0.6); border-color: rgba(255,255,255,0.15); }
 
-/* Placeholder colored image areas */
 .proj-image { height: 200px; position: relative; width: 100%; display: flex; justify-content: center; align-items: center; }
 .bg-pattern-1 { background: linear-gradient(135deg, #1e3a8a, #312e81); }
 .bg-pattern-2 { background: linear-gradient(135deg, #064e3b, #022c22); }
 .bg-pattern-3 { background: linear-gradient(135deg, #701a75, #4a044e); }
 
-.status-badge { position: absolute; top: 15px; left: 15px; background: #10b981; color: white; padding: 4px 12px; border-radius: 20px; font-size: 0.65rem; font-weight: 800; letter-spacing: 0.5px; }
+/* Ensure your uploaded images fit nicely */
+.actual-proj-img { position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: cover; z-index: 0; }
+
+/* The Teal COMPLETED Badge */
+.status-badge { position: absolute; top: 15px; left: 15px; background: #2dd4bf; color: #000; padding: 4px 12px; border-radius: 20px; font-size: 0.65rem; font-weight: 800; letter-spacing: 0.5px; z-index: 2; }
 
 .proj-body { padding: 30px; flex: 1; display: flex; flex-direction: column; }
 .proj-tags { display: flex; gap: 10px; margin-bottom: 20px; }
