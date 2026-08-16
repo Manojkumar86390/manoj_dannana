@@ -17,6 +17,7 @@
             <li><a href="#about">About</a></li>
             <li><a href="#education">Education</a></li>
             <li><a href="#skills">Skills</a></li>
+            <li><a href="#internship">Internship</a></li>
             <li><a href="#projects">Projects</a></li>
             <li><a href="#contact">Contact</a></li>
         </ul>
@@ -132,19 +133,46 @@
         </div>
     </section>
 
+    <section id="internship" class="internship">
+        <h2 class="section-title serif-title reveal-text">Internship <span class="gradient-text">Experience</span></h2>
+        <div class="title-underline reveal-text"></div>
+
+        <div class="intern-container">
+            <div class="intern-card reveal-3d delay-1">
+                <div class="intern-header">
+                    <div>
+                        <h3>Smart Security Patrol System</h3>
+                        <p class="intern-org">IIIT DM Kurnool</p>
+                    </div>
+                    <div class="intern-duration">May 2026 – July 2026</div>
+                </div>
+                <p class="intern-desc">
+                    Developed an ESP32-based IoT security patrol monitoring system for real-time
+                    checkpoint and personnel tracking. Implemented Bluetooth Low Energy (BLE)
+                    scanning on ESP32 to detect and identify nearby patrol devices/tags, and
+                    integrated the embedded scanner with a web-based monitoring dashboard for
+                    real-time patrol status, checkpoint verification and event logging. Built
+                    features for patrol logs, incident reporting, device management and analytics,
+                    working across hardware–software integration, device communication and event processing.
+                </p>
+                <a href="https://sentinel-patrol-dmk.vercel.app/" target="_blank" class="intern-link">🔗 View Live Demo</a>
+            </div>
+        </div>
+    </section>
+
     <section id="projects" class="projects">
         <h2 class="section-title serif-title reveal-text">Our <span class="gradient-text">Projects</span></h2>
         <p class="proj-subtitle reveal-text">Explore my portfolio of technical engineering builds</p>
         
         <div class="proj-filters slide-up delay-1">
-            <button class="filter-btn active">All Projects</button>
-            <button class="filter-btn">Hardware</button>
-            <button class="filter-btn">Software</button>
-            <button class="filter-btn">VLSI</button>
+            <button class="filter-btn active" data-filter="all">All Projects</button>
+            <button class="filter-btn" data-filter="hardware">Hardware</button>
+            <button class="filter-btn" data-filter="software">Software</button>
+            <button class="filter-btn" data-filter="vlsi">VLSI</button>
         </div>
 
         <div class="project-grid">
-            <div class="proj-card slide-up delay-2">
+            <div class="proj-card slide-up delay-2" data-category="vlsi">
                 <div class="proj-image">
                     <img src="vlsi-project.png" alt="VLSI VCO Design" class="actual-proj-img">
                     <span class="status-badge">COMPLETED</span>
@@ -154,13 +182,13 @@
                         <span class="tag solid">VLSI</span>
                         <span class="tag outline">CADENCE</span>
                     </div>
-                    <h3>VLSI VCO Design</h3>
-                    <p>Designed a Voltage Controlled Oscillator (VCO) of 180nm Full custom (RTL to GDS) utilizing Cadence Virtuoso.</p>
+                    <h3>5-Stage VCO Design — Cadence Virtuoso</h3>
+                    <p>Designed and implemented a 5-stage current-starved ring oscillator/VCO at transistor level in 180nm CMOS technology using Cadence Virtuoso. Verified through post-layout simulation, DRC, LVS and parasitic extraction, with realistic frequency-voltage tuning confirmed via transient analysis.</p>
                     <div class="proj-footer"><span class="dot"></span> 180NM TECH</div>
                 </div>
             </div>
 
-            <div class="proj-card slide-up delay-3">
+            <div class="proj-card slide-up delay-3" data-category="hardware">
                 <div class="proj-image">
                     <img src="robot-project.png" alt="Autonomous Cleaning Machine" class="actual-proj-img">
                     <span class="status-badge">COMPLETED</span>
@@ -176,7 +204,7 @@
                 </div>
             </div>
 
-            <div class="proj-card slide-up delay-4">
+            <div class="proj-card slide-up delay-4" data-category="hardware software">
                 <div class="proj-image">
                     <img src="iot-project.png" alt="IoT Smart Streetlight" class="actual-proj-img">
                     <span class="status-badge">COMPLETED</span>
@@ -189,6 +217,38 @@
                     <h3>IoT Smart Streetlight</h3>
                     <p>Developed an Internet of Things (IoT) based streetlight system engineered to significantly reduce power consumption.</p>
                     <div class="proj-footer"><span class="dot"></span> SMART CITY</div>
+                </div>
+            </div>
+
+            <div class="proj-card slide-up delay-2" data-category="hardware">
+                <div class="proj-image">
+                    <img src="pcb-project.png" alt="Temperature-to-Voltage Converter PCB" class="actual-proj-img">
+                    <span class="status-badge">COMPLETED</span>
+                </div>
+                <div class="proj-body">
+                    <div class="proj-tags">
+                        <span class="tag solid">PCB</span>
+                        <span class="tag outline">ANALOG</span>
+                    </div>
+                    <h3>Temperature-to-Voltage Converter PCB</h3>
+                    <p>Designed a thermistor-based temperature sensing circuit producing a proportional 0–5V output over a 0–73°C range. Carried out analog circuit design, schematic capture, and PCB layout/routing in KiCad, then fabricated, assembled and calibrated the board.</p>
+                    <div class="proj-footer"><span class="dot"></span> KICAD</div>
+                </div>
+            </div>
+
+            <div class="proj-card slide-up delay-3" data-category="vlsi">
+                <div class="proj-image">
+                    <img src="ota-project.png" alt="OTA Design and Analysis" class="actual-proj-img">
+                    <span class="status-badge">COMPLETED</span>
+                </div>
+                <div class="proj-body">
+                    <div class="proj-tags">
+                        <span class="tag solid">VLSI</span>
+                        <span class="tag outline">CADENCE</span>
+                    </div>
+                    <h3>Operational Transconductance Amplifier (OTA) Design</h3>
+                    <p>Designed and simulated a single-stage Operational Transconductance Amplifier in Cadence Virtuoso. Analyzed gain, bandwidth, phase margin and stability using Cadence simulation tools.</p>
+                    <div class="proj-footer"><span class="dot"></span> ANALOG IC</div>
                 </div>
             </div>
         </div>
@@ -314,14 +374,3 @@ alert("Message Sent Successfully!");
     
 </body>
 </html>
-
-
-
-
-
-
-
-
-
-
-
