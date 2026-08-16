@@ -106,6 +106,19 @@ nav a:hover { color: var(--primary); }
 .cert-info h4 { color: white; font-size: 1rem; margin-bottom: 5px; }
 .cert-info p { color: var(--text-muted); font-size: 0.85rem; }
 
+/* Internship Section */
+.internship { padding: 100px 8%; background: #050810; }
+.intern-container { max-width: 900px; margin: 0 auto; }
+.intern-card { background: rgba(255, 255, 255, 0.02); border: 1px solid rgba(255, 255, 255, 0.05); border-left: 4px solid var(--primary); border-radius: 20px; padding: 40px; transition: 0.4s ease; }
+.intern-card:hover { transform: translateY(-5px); border-left-color: var(--secondary); background: rgba(255, 255, 255, 0.04); }
+.intern-header { display: flex; justify-content: space-between; align-items: flex-start; flex-wrap: wrap; gap: 15px; margin-bottom: 20px; }
+.intern-header h3 { font-size: 1.5rem; color: white; font-family: 'Playfair Display', serif; margin-bottom: 5px; }
+.intern-org { color: var(--primary); font-weight: 600; font-size: 0.95rem; }
+.intern-duration { background: rgba(56, 189, 248, 0.1); color: var(--primary); padding: 6px 16px; border-radius: 20px; font-size: 0.85rem; font-weight: 600; white-space: nowrap; }
+.intern-desc { color: var(--text-muted); line-height: 1.8; margin-bottom: 25px; font-size: 1rem; }
+.intern-link { display: inline-flex; align-items: center; gap: 8px; padding: 12px 28px; background: transparent; border: 2px solid var(--primary); color: var(--primary); text-decoration: none; border-radius: 30px; font-weight: 600; font-size: 0.9rem; transition: 0.3s; }
+.intern-link:hover { background: var(--primary); color: var(--bg-color); }
+
 /* Projects Section */
 .projects { padding: 100px 8%; background: #080b13; }
 .proj-subtitle { text-align: center; color: #94a3b8; margin-top: -30px; margin-bottom: 50px; font-size: 1.05rem; }
